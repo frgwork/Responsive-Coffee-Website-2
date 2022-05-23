@@ -112,7 +112,8 @@ img {
    background-color: var(--primary-color-hover);
 }
 
-.content-subtitle {
+.content-subtitle,
+.section-subtitle {
    color: var(--primary-color);
    font-size: var(--normal-font);
    letter-spacing: 1px;
@@ -120,6 +121,7 @@ img {
    text-align: center;
 }
 
+.section-title,
 .content-title {
    text-align: center;
    font-size: var(--h2-font);
@@ -127,6 +129,7 @@ img {
    margin: 1rem 0;
 }
 
+.section-description,
 .content-description {
    text-align: center;
    margin-bottom: 2rem;
@@ -480,7 +483,86 @@ img {
 }
 
 /* Menu */
+.menu {
+   background-color: var(--section-bg);
+}
 
+.section-title,
+.section-description {
+   color: var(--white-color);
+}
+
+.menu .menu-content {
+   display: grid;
+   grid-template-columns: 1.8fr 1fr;
+   column-gap: 6rem;
+   margin-top: 6rem;
+}
+
+.menu-img {
+   height: 80px;
+   width: 80px;
+   margin-right: 1.5rem;
+}
+
+.menu-items {
+   display: grid;
+   row-gap: 1.5rem;
+}
+
+.menu-item {
+   position: relative;
+   background-color: var(--white-color);
+   padding: 2rem 2.5rem;
+}
+
+.menuitem-details {
+   margin-right: 1.5rem;
+}
+
+.menuitem-topic {
+   font-weight: var(--font-semi-bold);
+}
+
+.menuitem-des {
+   font-size: var(--small-font);
+}
+
+.menuitem-price {
+   flex-direction: column;
+   padding-left: 2rem;
+   border-left: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.descount-price {
+   font-size: 1.8rem;
+}
+
+.real-price {
+   text-decoration: line-through;
+}
+
+.time-topic {
+   background-color: var(--primary-color);
+   width: 100%;
+   display: block;
+   text-align: center;
+   font-size: 1.8rem;
+   font-weight: var(--font-regular);
+   padding: 1.5rem 0;
+   color: var(--white-color);
+}
+
+.time-list {
+   background-color: var(--white-color);
+   justify-content: space-between;
+   padding: 1.5rem;
+   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.time-list:nth-child(7) {
+   border-bottom: none;
+}
 
 /* Brand */
 
