@@ -85,3 +85,24 @@ window.addEventListener('scroll', () => {
 })
 
 // Scroll Reveal Animation
+const sr = ScrollReveal({
+   origin: 'top',
+   distance: '60px',
+   duration: 1500,
+   delay: 400,
+});
+
+sr.reveal(`
+.section-subtitle, 
+.section-title,
+.section-description,
+.brand-image,
+.tesitmonial`, { interval: 100 });
+
+sr.reveal(`
+.about-image, 
+.menu-items`, { origin: 'left' });
+
+sr.reveal(`
+.about-details, 
+.time-table`, { origin: 'right' });

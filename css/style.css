@@ -410,7 +410,7 @@ img {
 
 .home-subtitle {
    text-align: center;
-   font-size: var(--normal-font);
+   font-size: var(--normal-font--);
    color: var(--white-color);
 }
 
@@ -932,6 +932,12 @@ img {
 
    .footer-container {
       row-gap: 1.5rem;
+   }
+}
+
+@media (max-width: 668px) {
+   .aboutimg-text {
+      right: -1.5rem;
    }
 }
 
